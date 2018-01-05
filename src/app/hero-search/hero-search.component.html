@@ -1,0 +1,12 @@
+<div id="search-component">
+  <input name="search-box" (focus)="setWidth($event)"  #searchBox id="search-box" 
+  (keyup)="search(searchBox.value, $event)" type="text" class="search-query form-control" 
+  autocomplete="off" placeholder="Search..." value="{{selectedHero}}">
+  <ul class="search-result" >
+    <li *ngFor="let hero of heroes$ | async">
+      <a routerLink="/detail/{{hero.id}}" (click)="select($event, hero)">
+        {{hero.name}}
+      </a>
+    </li>
+  </ul>
+</div>

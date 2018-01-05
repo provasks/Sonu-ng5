@@ -1,0 +1,26 @@
+.search-result {
+    margin: 0;
+    padding-left: 0;
+    font-size: smaller;
+    border-radius: 5px;
+    overflow: hidden;
+    // z-index: 9999;
+    position: absolute;
+
+    li {
+        list-style: none;
+        background-color: blanchedalmond;
+        padding-left: 12px;
+        padding: 5px 5px 5px 12px;
+        border-bottom: .5px solid lightgray;
+        &:hover{
+            background-color: lightblue;
+        }
+        a {
+            &:hover {
+                text-decoration: none;
+                
+            }
+        }
+    }
+}

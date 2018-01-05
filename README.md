@@ -1,83 +1,27 @@
-# RESTful API with Node.js, Express.js, Mongoose and MongoDB.
+# Basic
 
-Example of a RESTful API built with Node.js, Express.js, Mongoose and MongoDB.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.4.
 
-## RESTful API endpoints
+## Development server
 
-### GET `/api/items`
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Get all items.
+## Code scaffolding
 
-+ Method: `GET`
-+ URL: `/api/items`
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### POST `/api/items`
+## Build
 
-Create a new item.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-+ Method: `POST`
-+ URL: `/api/items`
-+ Body:
+## Running unit tests
 
-```js
-{
-  "id": "1",
-  "name": "React.js Essentials",
-  "description": "A fast-paced guide to designing and building scalable and maintainable web apps with React.js.",
-  "quantity": "10"
-}
-```
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### GET `/api/items/:itemId`
+## Running end-to-end tests
 
-Get item with specific id.
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-+ Method: `GET`
-+ URL: `/api/items/1`
+## Further help
 
-### PUT `/api/items/:itemId`
-
-Update entire item with specific id.
-
-+ Method: `PUT`
-+ URL: `/api/items/1`
-+ Body:
-
-```js
-{
-  "id": "1",
-  "name": "React.js Essentials",
-  "description": "A fast-paced guide to designing and building scalable and maintainable web apps with React.js.",
-  "quantity": "20"
-}
-```
-
-### PATCH `/api/items/:itemId`
-
-Update part of the item with specific id.
-
-+ Method: `PATCH`
-+ URL: `/api/items/1`
-+ Body:
-
-```js
-{
-  "quantity": "30"
-}
-```
-
-### DELETE `/api/items/:itemId`
-
-Delete item with specific id.
-
-+ Method: `DELETE`
-+ URL: `/api/items/1`
-
-## Install
-
-`npm install`
-
-## Run
-
-0. Make sure MongoDB is running, if not: `sudo ~/mongodb/bin/mongod` (assuming you have `~/mongodb` directory).
-1. `npm run start`
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
