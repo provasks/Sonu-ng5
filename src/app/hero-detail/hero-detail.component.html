@@ -1,4 +1,5 @@
-<div *ngIf="hero" class="hero-detail">
+<div (heroSelected)="showHero($event)"></div>
+<div *ngIf="hero" class="hero-detail" >
   <h2>{{ hero.name | uppercase }} Details</h2>
   <div>
     <span>id: </span>{{hero.id}}</div>

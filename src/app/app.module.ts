@@ -17,6 +17,8 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { HeroComponent } from './hero/hero.component';
+import { CarouselComponent } from './carousel/carousel.component';
 // import { InMemoryDataService } from './in-memory-data.service'; // <-- NgModel lives here
 
 
@@ -30,7 +32,9 @@ import { NavigationComponent } from './navigation/navigation.component';
     HeroSearchComponent,
     HeaderComponent,
     FooterComponent,
-    NavigationComponent
+    NavigationComponent,
+    HeroComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

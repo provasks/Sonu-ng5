@@ -40,4 +40,8 @@ export class HeroDetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+
+  showHero(){
+    alert("Hi");
+  }
 }

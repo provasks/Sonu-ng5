@@ -8,15 +8,15 @@ import { Router } from '@angular/router';
 import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
 
 import { HeroService } from '../services/hero.service';
-import {BrowserModule} from '@angular/platform-browser';
+// import {BrowserModule} from '@angular/platform-browser';
 
-import { FormsModule } from '@angular/forms';
+// import { FormsModule } from '@angular/forms';
 
-@NgModule({
-  imports: [ BrowserModule,FormsModule ],
-  declarations: [ HeroSearchComponent ],
-  bootstrap: [ HeroSearchComponent ]
-})
+// @NgModule({
+//   imports: [ BrowserModule,FormsModule ],
+//   declarations: [ HeroSearchComponent ],
+//   bootstrap: [ HeroSearchComponent ]
+// })
 
 @Component({
   selector: 'app-hero-search',
@@ -24,7 +24,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./hero-search.component.scss']
 })
 export class HeroSearchComponent implements OnInit {
-  @Output('selectedHero') heroSelected = new EventEmitter<Hero>();
+  @Output('hero') heroSelected: EventEmitter<Hero> = new EventEmitter<Hero>();
 
   heroes$: Observable<Hero[]>;
   private searchTerms = new Subject<string>();
